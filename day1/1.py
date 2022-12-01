@@ -1,7 +1,12 @@
-input = open("input.txt","r").read()
+demo = 0
+
+if demo == True:
+    input = 'demoinput.txt'
+else:
+    input = 'input.txt'
 
 def one():
-    elves_raw = [i for i in input.split("\n")]
+    elves_raw = [x.strip() for x in open(input)]
     elves = []
     temp = 0
     for i in elves_raw:
@@ -13,7 +18,7 @@ def one():
     print(max(elves))
 
 def two():
-    elves_raw = [i for i in input.split("\n")]
+    elves_raw = [x.strip() for x in open(input)]
     elves = []
     temp = 0
     for i in elves_raw:
