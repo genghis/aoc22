@@ -22,6 +22,7 @@ def two():
             temp = 0
         else:   
             temp+=int(i)
+    elves.append(temp)
     elves.sort(reverse = True)
     print(sum(elves[0:3]))
 
