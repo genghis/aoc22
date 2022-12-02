@@ -1,3 +1,7 @@
+# input = 'demoinput.txt'
+input = 'input.txt'
+games = [x.strip().split(' ') for x in open(input)]
+
 def one():
     results = {
         'X': {
@@ -19,7 +23,7 @@ def one():
             'C': 3
         }
     }
-    games = [x.strip().split(' ') for x in open('input.txt')]
+
     total_score = 0
     for game in games:
         theirs,mine = game[0], game[1]
@@ -48,7 +52,7 @@ def two():
             'C': 1
         }
     }
-    games = [x.strip().split(' ') for x in open('input.txt')]
+
     total_score = 0
     for game in games:
         theirs,mine = game[0], game[1]
