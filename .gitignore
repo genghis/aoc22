@@ -1,1 +1,5 @@
 teamwork/
+lib/
+include/
+pyvenv.cfg
+bin/
